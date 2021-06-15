@@ -1,0 +1,12 @@
+Problema 1. 
+Consultas de SQL (10 puntos). La agencia de Seguro Social (SSA) del gobierno de los EEUU publica cada año una lista de los nombres masculinos y femeninos más comunes de recién nacidos.
+Adjunto a este documento encontrará  el  archivo names2018.txt, que  contiene  la  lista  para  el  año  2018 (https://www.ssa.gov/cgi-bin/popularnames.cgi). 
+Además,para los tops20 nombres existe otro archivo births2018.txt con el numero total de nacimientos para niños y niñas con cada uno de estos nombres.
+Escriba un script llamado procesaNombres.pyque lea el archivo y lo guarde en la base de datos babynames.sql de PostgreSQL. 
+Esta base de datos tendrá una tabla con tres columnas: Id, rango, nombre,sexo (M o F)y numero de nacimientospara cada nombre.
+Su script, mediante el uso de consultas SQL, debe imprimir la siguiente información:
+a.Los 100primeros nombres mas populares (para ambos géneros).
+b.Todos los nombres que tienen 4 letras o menos y sus rangos (para ambos géneros).
+c.Imprima todos los nombres femeninos que tengan las letras ‘w’ o ‘x’ o ‘y’ o ‘z’ en ellas.
+Sugerencia: estudie el uso de la cláusula LIKE (ILIKE) y los operadores ‘%’ y ’_’. Donde El signo de porcentaje ‘%' representa cero, uno o varios números o caracteres. El signo subrayado ' _ ' representa un solo número o carácter.
+d.todos los nombres que tienen dos letras repetidas(de 3 casos distintos), por ejemplo: ‘aa’, ‘cc’, ‘pp’(la letra p seguido de p). Sugerencia: Aquí también puede usar una expresión regular para hacer el match.
